@@ -1,0 +1,30 @@
+  496  uptime
+  497  ./fog.sh 
+  498  killall plasmashell
+  499  plasmashell &
+  500  killall plasmashell
+  501  nano kde
+  502  ls kde 
+  503  cat kde 
+  504  touch panel-restart
+  505  echo '#!/bin/bash' > panel-restart
+  506  echo 'killall plasmashell;plasmashell &' >> panel-restart
+  507  sudo chmod +x panel-restart
+  508  sudo mv panel-restart /usr/bin/
+  509  cp /usr/bin/panel-restart ~/
+  510  cat panel-restart 
+  511  cp panel-restart panel-killall
+  512  nano panel-killall 
+  513  sudo cp panel-killall /usr/bin/
+  514  cp panel-* github/linuxScriptsWorkstation/
+  515  ls github/linuxScriptsWorkstation/
+  516  cd github/linuxScriptsWorkstation/
+  517  git commit -m "kde-panel-plasma"
+  518  git push origin master
+  519  git add panel-killall 
+  520  git add panel-restart 
+  521  git commit -m "kde-panel-plasma"
+  522  git push origin master
+  523  history |tail -n 30
+  524  touch git-plasma-binScript
+  525  history |tail -n 30 > git-plasma-binScript 
